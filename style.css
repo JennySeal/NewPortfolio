@@ -13,7 +13,7 @@ a               {text-decoration: none;}
 header          {width: 100%; 
                 display: grid;
                 background-image: url("./heroImage.JPG");
-                background-size: 80%;
+                background-size: 90%;
                 background-repeat: no-repeat;
                 background-position: right;
                 background-color: #d93527;
@@ -32,24 +32,28 @@ nav            {width: 100%;
                 justify-content: flex-end;
                 background-color: #e8e7e5;
                 grid-area: 1 / 1 / 1 / 13;}
-.navButton      {background-image: linear-gradient(to bottom right, #ffb227, #d93527);
-                border: 4px solid silver;
+.navButton      {background-image: linear-gradient(to bottom right, silver, #d93527);
+                border: 4px solid #ffb227;
                  border-radius: 10%;
                  margin: 1%;
                  padding: 1%;
-                 height: 4rem;
+                 height: 3.5rem;
                 }
 .navButton a    {color: ghostwhite;
-                font-size: 1.2em;}
+                font-size: 1.1em;
+                text-transform: uppercase;}
 h1              {grid-area: 1 / 2 / 1 / 4;
                 z-index: 10;
                 justify-self: top;
                 align-items: center;}
 #bio            {grid-area: 2 / 1 / 7 / 5;
                 margin: 5%;}
-#bio img        {grid-area: 3 / 1 / 5 / 4;
+#bio img        {grid-area: 3 / 1 / 6 / 5;
                 width: 100%;
                 border-radius: 50%;
                 border: 5px solid #ffb227}
-header h2       {grid-area: 6 / 1 / 7 / 13;
-                color: ghostwhite}
+header h2       {grid-area: 6 / 3 / 7 / 13;
+                color: #d93527;
+                font-size: 3em;
+                justify-self:flex-end;
+                text-shadow: 2px 2px 2px silver;}
