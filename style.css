@@ -1,14 +1,15 @@
 *              {margin: 0;
                 padding: 0;
                 box-sizing: border-box;}
-html            {font-size: 18px;}
-h1              {font-family: 'Hind Siliguri', sans-serif;
+html            {font-size: 16px;
+                font-family: 'Hind Siliguri';
+                background-color: #e8e7e5;}
+h1              {font-size: 3.5em;
                 font-weight: 700;
-                font-size: 3em;
                 color: #d93527;}
-h2              {font-family: 'Hind Siliguri', san-serif;}
-h3              {font-family: 'Heebo', cursive;}
-p               {font-family: 'Hind Siliguri';}
+h2              {font-size: 2.5em;}
+h3              {font-size: 1.7em;}
+p               {font-size: 1.2em;}
 a               {text-decoration: none;}
 header          {width: 100%; 
                 display: grid;
@@ -18,38 +19,73 @@ header          {width: 100%;
                 background-position: right;
                 background-color: #d93527;
                 grid-template: repeat(6, 1fr) / repeat(12, 1fr);}
-#littleSeal     {border: 4px solid #d93527;
+#littleSeal     {border: 4px solid #ffb227;
                 border-radius: 10%;
                 background-color: ghostwhite;
                 grid-area: 1 / 1 / 1 / 2;
                 z-index: 2;
-                margin: 18% 8%;
-                transition: transform 2s;}
+                justify-self: center;
+                align-self: center;
+                transition: transform 2s;
+                float: right;
+                    }
 #littleSeal:hover {transform: rotate(360deg);}
  
 nav            {width: 100%;
                 display: inline-flex;
                 justify-content: flex-end;
                 background-color: #e8e7e5;
-                grid-area: 1 / 1 / 1 / 13;}
-.navButton      {background-image: linear-gradient(to bottom right, #ffb227, #d93527);
-                border: 4px solid silver;
+                grid-area: 1 / 1 / 1 / 13;
+                position: fixed;
+}
+.navButton      {background-image: linear-gradient(to bottom right, silver, #d93527);
+                border: 4px solid #d93527;
                  border-radius: 10%;
                  margin: 1%;
                  padding: 1%;
                  height: 4rem;
                 }
 .navButton a    {color: ghostwhite;
-                font-size: 1.2em;}
+                font-size: 1.2em;
+                text-transform: uppercase;}
 h1              {grid-area: 1 / 2 / 1 / 4;
                 z-index: 10;
                 justify-self: top;
-                align-items: center;}
+                align-self: center;}
 #bio            {grid-area: 2 / 1 / 7 / 5;
                 margin: 5%;}
 #bio img        {grid-area: 3 / 1 / 5 / 4;
                 width: 100%;
                 border-radius: 50%;
                 border: 5px solid #ffb227}
-header h2       {grid-area: 6 / 1 / 7 / 13;
-                color: ghostwhite}
+header h2       {grid-area: 6 / 6 / 7 / 13;
+                color: #d93527;
+                align-self:flex-end;
+                justify-self: flex-end;}
+#projects h2, #about h2
+                {background-color: #d93527;
+                border-top: 5px solid #e8e7e5;
+                width: 100%;
+                color: #e8e7e5;
+                padding: 0.5%;
+                line-height: 2em;}
+#flexProjects   {display: flex;
+                flex-direction: row;
+                padding: 2rem;
+                width: 100%;}
+figure         {display: flex;
+                flex-direction: column;
+                padding: 1%;}
+figcaption      {align-self: center;
+                justify-self: center;
+                color: #d93527;}     
+figure img      {max-width: 100%;
+                max-height: 27rem;}
+#jennyStanding  {max-width:100%;
+                max-height: 25rem;
+                float: left;}
+#about ul       {margin-left: 15%;}
+#about li       {margin-left: 15%;}
+#techLogos      {max-width: 25%;
+                float: right;} 
+ 
