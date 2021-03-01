@@ -62,7 +62,7 @@ header h2       {grid-area: 6 / 6 / 7 / 13;
                 color: #d93527;
                 align-self:flex-end;
                 justify-self: flex-end;}
-#projects h2, #about h2
+#projects h2, #about h2, #contact h2
                 {background-color: #d93527;
                 border-top: 5px solid #e8e7e5;
                 width: 100%;
@@ -88,4 +88,5 @@ figure img      {max-width: 100%;
 #about li       {margin-left: 15%;}
 #techLogos      {max-width: 25%;
                 float: right;} 
+            
  
