@@ -14,10 +14,10 @@
         <header>
             <img src="sealicon.png" alt="small seal icon" id="littleSeal">
             <h1>jennySeal.com</h1>
-            <nav role="navigation">   
-                        <p class="navButton"><a href="#projects">Projects</a></p>
-                        <p class="navButton"><a href="#about">About</a></p>
-                        <p class="navButton"><a href="#contact">Contact</a></p>
+            <nav role="navigation">  
+                <a href="#projects"><button class="navButton">Projects</button></a>
+                <a href="#about"><button class="navButton">About</button></a>
+                <a href="#contact"><button class="navButton">Contact</button></a> 
             </nav>
             <div id="bio">
                 <img src="JennySeal.JPG" alt="Jenny Seal, her cat and laptop">
@@ -27,10 +27,9 @@
     <main>
         <section id="projects">
             <h2>Portfolio Projects<img src="sealicon.png" alt="small seal icon" id="littleSeal"></h2>
-
                 <div id="flexProjects">
                     <figure>
-                    <a href="https://jennyseal.github.io/ChiClub/"><img src="ChiClubiPad.png" alt="Cardiff Chi Club website"></a>
+                    <a href="https://jennyseal.github.io/ChiClub/" target="_blank"><img src="ChiClubiPad.png" alt="Cardiff Chi Club website"></a>
                     <figcaption><h3>Cardiff Chihauhau Club</h3></figcaption>
                 </figure>
                 <figure>
@@ -38,7 +37,7 @@
                     <figcaption><h3>Number 22</h3></figcaption>
                 </figure>
                 <figure>
-                    <a href="https://jennyseal.github.io/GlampTastic/"><img src="GlampTasticphone.png" alt="GlampTastic website"></a>
+                    <a href="https://jennyseal.github.io/GlampTastic/" target="_blank"><img src="GlampTasticphone.png" alt="GlampTastic website"></a>
                     <figcaption><h3>GlampTastic</h3></figcaption>
                 </figure>
                 </div>
@@ -48,28 +47,34 @@
             <h2>About Jenny Seal<img src="sealicon.png" alt="small seal icon" id="littleSeal"></h2>
             <img src="jennysealcutout.png" alt="Jenny Seal smiling" id="jennyStanding">
             <h3>Hi! My name is Jenny Seal and I live in Cardiff.</h3>
-            <p>I am a developing Front End Developer who makes accessibile, responsive and visually appealing websites.</p>
+            <p>I am a developing Front End Developer who makes <span class="orangeText">accessibile</span>, <span class="orangeText">responsive</span> and <span class="orangeText">visually appealing</span> websites.</p>
             <p>I've enjoyed a diverse 25 year career that has taken some twists and turns including:</p>
             <ul>
-                <p><li>Analyst Programming for Cap Gemini</li></p>
-                <p><li>Marketing, Events and Project Management for multiple charities</li></p>
-                <p><li>Content Editing, feature writing and copywriting</li></p>
+                <li>Analyst Programming for Cap Gemini</li>
+                <li>Marketing, Events and Project Management for multiple charities</li>
+                <li>Content Editing, feature writing and copywriting</li>
+                <img src="techLogos.png" alt="Logos for HTML, CSS and JavaScript" id="techLogos">        
             </ul>
             <br>
-            <p>With an eye for design and love of learning and problem solving, I'm now honing my HTML, CSS and JavaScript skills in order to make quality websites.</p>
-            <img src="techLogos.png" alt="Logos for HTML, CSS and JavaScript" id="techLogos">        
+            <p>With an eye for design and love of learning and problem solving, I'm now honing my <span class="orangeText">HTML</span>, <span class="orangeText">CSS</span> and <span class="orangeText">JavaScript</span> skills in order to make quality websites.</p>
+            <br>
         </section>
         <section id="contact">
             <h2>Contact Jenny<img src="sealicon.png" alt="small seal icon" id="littleSeal"></h2>
-            <h3>If you have a web project or need someone to join your team, I would love to hear from you.</h3>
-            <p>Browse my <a href=https//jennyseal.github.io>GitHub Portfolio</a>, <a href=mailto:jennySealFT@gmail.com>email me</a> or call 07886 001 184.</p> 
+            <div id="contactText">
+            <h3 id="scrollScript"></h3>
+            <p>If you have a web project or need someone to join your team, please get in touch. </p>
+            <p>Browse my <a href=https//jennyseal.github.io target="_blank">GitHub Portfolio</a>, <a href=mailto:jennySealFT@gmail.com>email me on jennySealFT@gmail.com</a> or call 07886 001 184.</p> 
             <a href="https://jennyseal.github.io/" target="_blank"><i class="fab fa-github fa-3x"></i></a> 
             <a href="mailto:jennysealft@gmail.com"><i class="far fa-envelope fa-3x"></i></a>
             <i class="fas fa-mobile-alt fa-3x"></i>
+        <br>
+        <br>
+        </div>
         </section>
     </main>
     <footer>
-
+        <p>&copy; 2021 Jenny Seal at jennySeal.com</p>
     </footer>
         <script src="script.js"></script>
     </body>
