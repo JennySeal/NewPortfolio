@@ -1,16 +1,24 @@
 *              {margin: 0;
                 padding: 0;
                 box-sizing: border-box;}
+
 html            {font-size: 16px;
                 font-family: 'Hind Siliguri';
                 background-color: #e8e7e5;}
+
 h1              {font-size: 3.5em;
                 font-weight: 700;
                 color: #d93527;}
+
 h2              {font-size: 2.5em;}
+
 h3              {font-size: 1.7em;}
-p               {font-size: 1.2em;}
-a               {text-decoration: none;}
+
+p               {font-size: 1.3em;}
+
+a               {text-decoration: none;
+                color: #d93527;}
+
 header          {width: 100%; 
                 display: grid;
                 background-image: url("./heroImage.JPG");
@@ -18,7 +26,9 @@ header          {width: 100%;
                 background-repeat: no-repeat;
                 background-position: right;
                 background-color: #d93527;
+                opacity: 0.85;
                 grid-template: repeat(6, 1fr) / repeat(12, 1fr);}
+
 #littleSeal     {border: 4px solid #ffb227;
                 border-radius: 10%;
                 background-color: ghostwhite;
@@ -28,7 +38,8 @@ header          {width: 100%;
                 align-self: center;
                 transition: transform 2s;
                 float: right;
-                    }
+                box-shadow: 2px 2px 0.5em #d93527;}
+
 #littleSeal:hover {transform: rotate(360deg);}
  
 nav            {width: 100%;
@@ -37,56 +48,92 @@ nav            {width: 100%;
                 background-color: #e8e7e5;
                 grid-area: 1 / 1 / 1 / 13;
                 position: fixed;
+                box-shadow: 4px 4px 1em #d93527;
 }
-.navButton      {background-image: linear-gradient(to bottom right, silver, #d93527);
-                border: 4px solid #d93527;
-                 border-radius: 10%;
-                 margin: 1%;
-                 padding: 1%;
-                 height: 4rem;
-                }
-.navButton a    {color: ghostwhite;
+.navButton      {background-color: #d93527;
+                border: 4px solid #e8e7e5;
+                border-radius: 15%;
+                margin: 1rem;
+                height: 4rem;
+                font-family: "Hind Siliguri";
+                box-shadow: 3px 3px 0.5em #d93527;
+                color: #e8e7e5;
                 font-size: 1.2em;
+                padding: 4%;
                 text-transform: uppercase;}
+                
+.navButton:hover {transform: translate3d(0, 0.375em, -1em);
+                 background-color: #e8e7e5;
+                color: #d93527;
+                border: 4px solid #d93527;}
+                
 h1              {grid-area: 1 / 2 / 1 / 4;
                 z-index: 10;
                 justify-self: top;
                 align-self: center;}
+
 #bio            {grid-area: 2 / 1 / 7 / 5;
                 margin: 5%;}
 #bio img        {grid-area: 3 / 1 / 5 / 4;
-                width: 100%;
+                width: 80%;
                 border-radius: 50%;
-                border: 5px solid #ffb227}
+                border: 5px solid #ffb227;
+                box-shadow: 4px 4px 1em #d93527;}
 header h2       {grid-area: 6 / 6 / 7 / 13;
                 color: #d93527;
                 align-self:flex-end;
                 justify-self: flex-end;}
+#bannerSpan     {color: black;}
 #projects h2, #about h2, #contact h2
                 {background-color: #d93527;
                 border-top: 5px solid #e8e7e5;
                 width: 100%;
                 color: #e8e7e5;
                 padding: 0.5%;
-                line-height: 2em;}
+                padding-left: 1%;
+                line-height: 2em;
+                box-shadow: 4px 4px 1em #d93527;}
+#about          {height: 35.5rem;}
+#about h2       {background-color: #e8e7e5;
+                color: #d93527;
+                border-top: 5px solid #ffb227;
+                border-bottom: 5px solid #ffb227;} 
 #flexProjects   {display: flex;
                 flex-direction: row;
                 padding: 2rem;
                 width: 100%;}
 figure         {display: flex;
                 flex-direction: column;
-                padding: 1%;}
+                padding: 1%;
+              }
 figcaption      {align-self: center;
                 justify-self: center;
                 color: #d93527;}     
 figure img      {max-width: 100%;
                 max-height: 27rem;}
 #jennyStanding  {max-width:100%;
-                max-height: 25rem;
-                float: left;}
+                max-height: 29rem;
+                float: left;
+                }
+#about h3       {padding: 1%;}
 #about ul       {margin-left: 15%;}
-#about li       {margin-left: 15%;}
+#about li       {margin-left: 15%;
+                font-size: 1.3em;}
 #techLogos      {max-width: 25%;
                 float: right;} 
-            
- 
+.orangeText     {color: #d93527;}
+#contactText    {padding: 2%;
+                text-align: center;}
+i               {padding: 2%;
+                transition: transform 2s;
+                height: 2rem;
+                transform: rotate(-25deg) skew(25deg);
+                }
+i:hover         {transform: translate(0, 0.375em);}
+footer          {border-top: 5px solid #d93527;
+                text-align: right;
+                margin: 2% 0;
+                box-shadow: 4px 4px 1em #d93527;}
+#scrollScript   {font-family: monospace;}
+
+
