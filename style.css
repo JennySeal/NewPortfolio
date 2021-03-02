@@ -17,7 +17,8 @@ h3              {font-size: 1.7em;}
 p               {font-size: 1.3em;}
 
 a               {text-decoration: none;
-                color: #D93527;}
+                color: #D93527;
+                text-align: center;}
 
 header          {width: 100%; 
                 display: grid;
@@ -29,7 +30,7 @@ header          {width: 100%;
                 opacity: 0.85;
                 grid-template: repeat(6, 1fr) / repeat(12, 1fr);}
 
-#littleSeal     {border: 4px solid #ffb227;
+.littleSeal     {border: 4px solid #ffb227;
                 border-radius: 10%;
                 background-color: ghostwhite;
                 grid-area: 1 / 1 / 1 / 2;
@@ -41,7 +42,7 @@ header          {width: 100%;
                 margin: 1%;
                 box-shadow: 2px 2px 0.5em #D93527;}
 
-#littleSeal:hover {transform: rotate(360deg);}
+.littleSeal:hover {transform: rotate(360deg);}
  
 nav            {width: 100%;
                 display: inline-flex;
@@ -51,23 +52,29 @@ nav            {width: 100%;
                 position: fixed;
                 z-index: 20;
                 box-shadow: 4px 4px 1em #D93527;
+                padding: 1%;
 }
+
+nav a           {margin 1%;
+                padding-right: 1%;
+                min-width: 7.5rem;}
 .navButton      {background-color: #D93527;
                 border: 4px solid #fff;
                 border-radius: 15%;
-                margin: 1rem;
                 height: 4rem;
+                padding-top: 13%;
                 font-family: "Hind Siliguri";
                 box-shadow: 3px 3px 0.5em #D93527;
                 color: #fff;
                 font-size: 1.2em;
-                padding: 4%;
-                text-transform: uppercase;}
+                text-transform: uppercase;
+                  
+                }
                 
 .navButton:hover {transform: translate3d(0, 0.375em, -1em);
-                 background-color: #fff;
-                color: #D93527;
-                border: 4px solid #D93527;}
+                  background-color: #fff;
+                  color: #D93527;
+                  border: 4px solid #D93527;}
                 
 h1              {grid-area: 1 / 2 / 1 / 4;
                 z-index: 21;
@@ -87,7 +94,7 @@ header h2       {grid-area: 6 / 6 / 7 / 13;
                 align-self:flex-end;
                 justify-self: flex-end;}
 #bannerSpan     {color: darkslategray;}
-#projects h2, #about h2, #contact h2
+#projects h2, #skills h2, #contact h2
                 {background-color: #D93527;
                 border-top: 5px solid #fff;
                 width: 100%;
@@ -96,8 +103,8 @@ header h2       {grid-area: 6 / 6 / 7 / 13;
                 padding-left: 1%;
                 line-height: 2em;
                 box-shadow: 4px 4px 1em #D93527;}
-#about          {height: auto;}
-#about h2       {background-color: #fff;
+#skills          {height: auto;}
+#skills h2       {background-color: #fff;
                 color: #D93527;
                 border-top: 5px solid #ffb227;
                 border-bottom: 5px solid #ffb227;}
@@ -122,10 +129,10 @@ figure img      {max-width: 100%;
                 float: left;
                 margin-top: 2%;
                 }
-#about h3       {padding: 1%;
+#skills h3       {padding: 1%;
                 margin-top: 2%;}
-#about ul       {margin-left: 15%;}
-#about li       {margin-left: 15%;
+#skills ul       {margin-left: 15%;}
+#skills li       {margin-left: 15%;
                 font-size: 1.3em;}
 #techLogos      {max-width: 25%;
                 margin-left: auto;
@@ -166,13 +173,13 @@ header          {grid-template: repeat(4, 1fr) / repeat(12, 1fr);
             }
 @media only screen and (max-width: 875px) {
 
-#about ul, #about li, #about p, #about h3 {margin-left: 2%;}
-#about          {height: auto;
+#skills ul, #skills li, #skills p, #skills h3 {margin-left: 2%;}
+#skills          {height: auto;
                 margin: 1%;}
 #contact        {margin: 1%;}
 }
 
-@media only screen and (max-width: 770px) {
+@media only screen and (max-width: 800px) {
 html            {font-size: 15px;}
 header          {display: flex;
                 background-color: #fff;
@@ -192,25 +199,27 @@ header h2       {width: 100%;
                 text-align: center;
                 font-size: auto;}
 #blackText      {color: darkslategrey;}
-.navButton       {font-size: auto;}
+.navButton       {font-size: 1.2em;}
 figure img      {max-height: 50rem;}
 #jennyStanding  {max-height: 45rem;}
 }
 
 @media only screen and (max-width: 420px) {
 header h2       {font-size: 2em;}
-header #littleSeal  {visibility: hidden;}
+header .littleSeal  {visibility: hidden;}
 nav             {justify-content: space-around;}
-.navButton      {margin: 2% auto;
-                padding: 4%;}
+nav a           {min-width: 6em;}
+.navButton      {height: 3.2rem;
+                padding-top: 7%;
+                font-size: 1.1em;}
 }
 @media only screen and (max-width: 360px) {
 h1              {font-size: 3.2em;} 
-header h2       {font-size: 1.8em;}    
-#projects h2, #about h2, #contact h2 {font-size: 2em;}
+header h2       {font-size: 1.8em;}
+#projects h2, #skills h2, #contact h2 {font-size: 2em;}
 }
 @media only screen and (max-width: 309px) {
 html            {font-size: 14px;}
 h1              {font-size: 2.8em;}
-#littleSeal     {width: 15%;}
-}
+.littleSeal     {width: 15%;}
+} 
