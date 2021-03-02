@@ -4,11 +4,11 @@
 
 html            {font-size: 16px;
                 font-family: 'Hind Siliguri';
-                background-color: #e8e7e5;}
+                background-color: #fff;}
 
 h1              {font-size: 3.5em;
                 font-weight: 700;
-                color: #d93527;}
+                color: #D93527;}
 
 h2              {font-size: 2.5em;}
 
@@ -17,7 +17,7 @@ h3              {font-size: 1.7em;}
 p               {font-size: 1.3em;}
 
 a               {text-decoration: none;
-                color: #d93527;}
+                color: #D93527;}
 
 header          {width: 100%; 
                 display: grid;
@@ -25,7 +25,7 @@ header          {width: 100%;
                 background-size: 80%;
                 background-repeat: no-repeat;
                 background-position: right;
-                background-color: #d93527;
+                background-color: #D93527;
                 opacity: 0.85;
                 grid-template: repeat(6, 1fr) / repeat(12, 1fr);}
 
@@ -39,38 +39,38 @@ header          {width: 100%;
                 transition: transform 2s;
                 float: right;
                 margin: 1%;
-                box-shadow: 2px 2px 0.5em #d93527;}
+                box-shadow: 2px 2px 0.5em #D93527;}
 
 #littleSeal:hover {transform: rotate(360deg);}
  
 nav            {width: 100%;
                 display: inline-flex;
                 justify-content: flex-end;
-                background-color: #e8e7e5;
+                background-color: #fff;
                 grid-area: 1 / 1 / 1 / 13;
                 position: fixed;
                 z-index: 20;
-                box-shadow: 4px 4px 1em #d93527;
+                box-shadow: 4px 4px 1em #D93527;
 }
-.navButton      {background-color: #d93527;
-                border: 4px solid #e8e7e5;
+.navButton      {background-color: #D93527;
+                border: 4px solid #fff;
                 border-radius: 15%;
                 margin: 1rem;
                 height: 4rem;
                 font-family: "Hind Siliguri";
-                box-shadow: 3px 3px 0.5em #d93527;
-                color: #e8e7e5;
+                box-shadow: 3px 3px 0.5em #D93527;
+                color: #fff;
                 font-size: 1.2em;
                 padding: 4%;
                 text-transform: uppercase;}
                 
 .navButton:hover {transform: translate3d(0, 0.375em, -1em);
-                 background-color: #e8e7e5;
-                color: #d93527;
-                border: 4px solid #d93527;}
+                 background-color: #fff;
+                color: #D93527;
+                border: 4px solid #D93527;}
                 
 h1              {grid-area: 1 / 2 / 1 / 4;
-                z-index: 10;
+                z-index: 21;
                 justify-self: top;
                 align-self: center;}
 
@@ -80,24 +80,25 @@ h1              {grid-area: 1 / 2 / 1 / 4;
                 width: 80%;
                 border-radius: 50%;
                 border: 5px solid #ffb227;
-                box-shadow: 4px 4px 1em #d93527;}
+                box-shadow: 4px 4px 1em #D93527;
+                filter:saturate(120%);}
 header h2       {grid-area: 6 / 6 / 7 / 13;
-                color: #d93527;
+                color: black;
                 align-self:flex-end;
                 justify-self: flex-end;}
 #bannerSpan     {color: darkslategray;}
 #projects h2, #about h2, #contact h2
-                {background-color: #d93527;
-                border-top: 5px solid #e8e7e5;
+                {background-color: #D93527;
+                border-top: 5px solid #fff;
                 width: 100%;
-                color: #e8e7e5;
+                color: #fff;
                 padding: 0.5%;
                 padding-left: 1%;
                 line-height: 2em;
-                box-shadow: 4px 4px 1em #d93527;}
+                box-shadow: 4px 4px 1em #D93527;}
 #about          {height: auto;}
-#about h2       {background-color: #e8e7e5;
-                color: #d93527;
+#about h2       {background-color: #fff;
+                color: #D93527;
                 border-top: 5px solid #ffb227;
                 border-bottom: 5px solid #ffb227;}
 
@@ -113,7 +114,7 @@ figcaption      {align-self: center;
                 justify-self: center;
                 text-align: center;
                 line-height: 1.5em;
-                color: #d93527;}     
+                color: #D93527;}     
 figure img      {max-width: 100%;
                 max-height: 27rem;}
 #jennyStanding  {max-width:100%;
@@ -129,7 +130,7 @@ figure img      {max-width: 100%;
 #techLogos      {max-width: 25%;
                 margin-left: auto;
                 display: block;} 
-.orangeText     {color: #d93527;}
+.orangeText     {color: #D93527;}
 #contactText    {padding: 2%;
                 text-align: center;}
 i               {padding: 2%;
@@ -138,10 +139,10 @@ i               {padding: 2%;
                 transform: rotate(-25deg) skew(25deg);
                 }
 i:hover         {transform: translate(0, 0.375em);}
-footer          {border-top: 5px solid #d93527;
+footer          {border-top: 5px solid #D93527;
                 text-align: right;
                 margin: 2% 0;
-                box-shadow: 4px 4px 1em #d93527;}
+                box-shadow: 4px 4px 1em #D93527;}
 #scrollScript   {font-family: monospace;}
 
 /* ________________Smaller Screens___________________*/
@@ -167,22 +168,21 @@ header          {grid-template: repeat(4, 1fr) / repeat(12, 1fr);
 
 #about ul, #about li, #about p, #about h3 {margin-left: 2%;}
 #about          {height: auto;
-                margin: 1%:}
+                margin: 1%;}
 #contact        {margin: 1%;}
 }
 
 @media only screen and (max-width: 770px) {
 html            {font-size: 15px;}
 header          {display: flex;
-                background-color: #e8e7e5;
+                background-color: #fff;
                 flex-direction: column  ;
                 background-image: none;}
-#bio            {margin: 0;
-                opacity: 0.9;}
+#bio            {margin: 0;}
 #bio img        {width: 90%;
                 border-radius: 10%;
                 margin: 1% 5%;
-                box-shadow: 4px 4px 2em #d93527;}
+                box-shadow: 4px 4px 2em #D93527;}
 header h1       {font-size: auto;
                 text-align: center;
                 margin: 3% auto;
@@ -213,3 +213,4 @@ header h2       {font-size: 1.8em;}
 html            {font-size: 14px;}
 h1              {font-size: 2.8em;}
 #littleSeal     {width: 15%;}
+}
