@@ -33,11 +33,12 @@ header          {width: 100%;
                 border-radius: 10%;
                 background-color: ghostwhite;
                 grid-area: 1 / 1 / 1 / 2;
-                z-index: 2;
+                z-index: 21;
                 justify-self: center;
-                align-self: center;
+                align-self: flex-start;
                 transition: transform 2s;
                 float: right;
+                margin: 1%;
                 box-shadow: 2px 2px 0.5em #d93527;}
 
 #littleSeal:hover {transform: rotate(360deg);}
@@ -48,6 +49,7 @@ nav            {width: 100%;
                 background-color: #e8e7e5;
                 grid-area: 1 / 1 / 1 / 13;
                 position: fixed;
+                z-index: 20;
                 box-shadow: 4px 4px 1em #d93527;
 }
 .navButton      {background-color: #d93527;
@@ -83,7 +85,7 @@ header h2       {grid-area: 6 / 6 / 7 / 13;
                 color: #d93527;
                 align-self:flex-end;
                 justify-self: flex-end;}
-#bannerSpan     {color: black;}
+#bannerSpan     {color: darkslategray;}
 #projects h2, #about h2, #contact h2
                 {background-color: #d93527;
                 border-top: 5px solid #e8e7e5;
@@ -93,34 +95,40 @@ header h2       {grid-area: 6 / 6 / 7 / 13;
                 padding-left: 1%;
                 line-height: 2em;
                 box-shadow: 4px 4px 1em #d93527;}
-#about          {height: 35.5rem;}
+#about          {height: auto;}
 #about h2       {background-color: #e8e7e5;
                 color: #d93527;
                 border-top: 5px solid #ffb227;
-                border-bottom: 5px solid #ffb227;} 
+                border-bottom: 5px solid #ffb227;}
+
 #flexProjects   {display: flex;
                 flex-direction: row;
                 padding: 2rem;
-                width: 100%;}
+                width: 100%;
+                justify-content: space-between;}
 figure         {display: flex;
                 flex-direction: column;
-                padding: 1%;
-              }
+                padding: 1%;}
 figcaption      {align-self: center;
                 justify-self: center;
+                text-align: center;
+                line-height: 1.5em;
                 color: #d93527;}     
 figure img      {max-width: 100%;
                 max-height: 27rem;}
 #jennyStanding  {max-width:100%;
                 max-height: 29rem;
                 float: left;
+                margin-top: 2%;
                 }
-#about h3       {padding: 1%;}
+#about h3       {padding: 1%;
+                margin-top: 2%;}
 #about ul       {margin-left: 15%;}
 #about li       {margin-left: 15%;
                 font-size: 1.3em;}
 #techLogos      {max-width: 25%;
-                float: right;} 
+                margin-left: auto;
+                display: block;} 
 .orangeText     {color: #d93527;}
 #contactText    {padding: 2%;
                 text-align: center;}
@@ -136,4 +144,72 @@ footer          {border-top: 5px solid #d93527;
                 box-shadow: 4px 4px 1em #d93527;}
 #scrollScript   {font-family: monospace;}
 
+/* ________________Smaller Screens___________________*/
 
+@media only screen and (min-width: 1450px) {
+html            {font-size: 22px;}
+}
+
+@media only screen and (max-width: 1150px) {
+header {grid-template: repeat(4, 1fr) / repeat(12, 1fr);}
+#flexProjects   {flex-wrap: wrap;
+                justify-content: space-evenly;}
+    }
+@media only screen and (max-width: 930px) {
+header          {grid-template: repeat(4, 1fr) / repeat(12, 1fr);
+                background-position: bottom right;    
+                }
+#bio img        {width: 100%;}
+#techLogos      {max-width: 40%;}
+#contactText    {margin: 1% 10%;}
+            }
+@media only screen and (max-width: 875px) {
+
+#about ul, #about li, #about p, #about h3 {margin-left: 2%;}
+#about          {height: auto;
+                margin: 1%:}
+#contact        {margin: 1%;}
+}
+
+@media only screen and (max-width: 770px) {
+html            {font-size: 15px;}
+header          {display: flex;
+                background-color: #e8e7e5;
+                flex-direction: column  ;
+                background-image: none;}
+#bio            {margin: 0;
+                opacity: 0.9;}
+#bio img        {width: 90%;
+                border-radius: 10%;
+                margin: 1% 5%;
+                box-shadow: 4px 4px 2em #d93527;}
+header h1       {font-size: auto;
+                text-align: center;
+                margin: 3% auto;
+                width: 100%;
+                line-height: 1.2em;}
+header h2       {width: 100%;
+                text-align: center;
+                font-size: auto;}
+#blackText      {color: darkslategrey;}
+.navButton       {font-size: auto;}
+figure img      {max-height: 50rem;}
+#jennyStanding  {max-height: 45rem;}
+}
+
+@media only screen and (max-width: 420px) {
+header h2       {font-size: 2em;}
+header #littleSeal  {visibility: hidden;}
+nav             {justify-content: space-around;}
+.navButton      {margin: 2% auto;
+                padding: 4%;}
+}
+@media only screen and (max-width: 360px) {
+h1              {font-size: 3.2em;} 
+header h2       {font-size: 1.8em;}    
+#projects h2, #about h2, #contact h2 {font-size: 2em;}
+}
+@media only screen and (max-width: 309px) {
+html            {font-size: 14px;}
+h1              {font-size: 2.8em;}
+#littleSeal     {width: 15%;}
