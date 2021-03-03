@@ -55,7 +55,7 @@ nav            {width: 100%;
                 padding: 1%;
 }
 
-nav a           {margin 1%;
+nav a           {margin: 1%;
                 padding-right: 1%;
                 min-width: 7.5rem;}
 .navButton      {background-color: #D93527;
@@ -78,7 +78,7 @@ nav a           {margin 1%;
                 
 h1              {grid-area: 1 / 2 / 1 / 4;
                 z-index: 21;
-                justify-self: top;
+                justify-self:self-start;
                 align-self: center;}
 
 #bio            {grid-area: 2 / 1 / 7 / 5;
@@ -144,12 +144,13 @@ figure img      {max-width: 100%;
 .orangeText     {color: #D93527;}
 #contactText    {padding: 2%;
                 text-align: center;}
-i               {padding: 2%;
+#contactText img {padding: 2%; 
                 transition: transform 2s;
-                height: 2rem;
-                transform: rotate(-25deg) skew(25deg);
+                height: 8rem;
+                color: black;
+                transform: rotate(-15deg) skew(15deg);
                 }
-i:hover         {transform: translate(0, 0.375em);}
+#contactText img:hover  {transform: translate(0, 0.375em);}
 footer          {border-top: 5px solid #D93527;
                 text-align: right;
                 margin: 2% 0;
@@ -194,18 +195,20 @@ header          {display: flex;
                 border-radius: 10%;
                 margin: 1% 5%;
                 box-shadow: 4px 4px 2em #D93527;}
-header h1       {font-size: auto;
+header h1       {font-size:3.7em;
                 text-align: center;
                 margin: 3% auto;
                 width: 100%;
                 line-height: 1.2em;}
 header h2       {width: 100%;
                 text-align: center;
-                font-size: auto;}
+                font-size: 2.5em;}
 #blackText      {color: darkslategrey;}
 .navButton       {font-size: 1.2em;}
 figure img      {max-height: 50rem;}
 #jennyStanding  {max-height: 45rem;}
+#contactText img {height: 6rem;
+                 padding: 1%;}
 }
 
 @media only screen and (max-width: 420px) {
@@ -216,9 +219,10 @@ nav a           {min-width: 6em;}
 .navButton      {height: 3.2rem;
                 padding-top: 7%;
                 font-size: 1.1em;}
+#contactText img {height: 4rem;
 }
 @media only screen and (max-width: 375px) {
-h1              {font-size: 3.2em;} 
+header h1              {font-size: 3em;} 
 header h2       {font-size: 1.8em;}
 #projects h2, #skills h2, #contact h2 {font-size: 2em;}
 }
@@ -226,4 +230,4 @@ header h2       {font-size: 1.8em;}
 html            {font-size: 14px;}
 h1              {font-size: 2.8em;}
 .littleSeal     {width: 15%;}
-} 
+}
