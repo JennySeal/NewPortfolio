@@ -22,7 +22,7 @@ a               {text-decoration: none;
 
 header          {width: 100%; 
                 display: grid;
-                background-image: url("./heroImage.JPG");
+                background-image: url("./heroImage-min.JPG");
                 background-size: 80%;
                 background-repeat: no-repeat;
                 background-position: right;
