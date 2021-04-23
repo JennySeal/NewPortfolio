@@ -110,13 +110,17 @@ header h2       {grid-area: 6 / 6 / 7 / 13;
                 border-bottom: 5px solid #ffb227;}
 
 #flexProjects   {display: flex;
-                flex-direction: row;;
+                flex-direction: row;
                 padding: 1rem;
                 width: 100%;
+                flex-wrap: wrap;
                 align-items:center;
-                justify-content:space-evenly;}
+                justify-content:center;}
 figure         {display: flex;
+                width: 32%;
                 flex-direction: column;
+                align-items: center;
+                justify-content: center;
                 padding: 1%;}
 figure a        {padding: 1%;
                 align-self: center;
@@ -166,9 +170,13 @@ html            {font-size: 22px;}
 
 @media only screen and (max-width: 1150px) {
 header {grid-template: repeat(4, 1fr) / repeat(12, 1fr);}
-#flexProjects   {flex-wrap: wrap;
-                justify-content: space-evenly;}
-    }
+#flexProjects   {justify-content: space-around;}
+figure          {width: 45vw;
+                margin: 2vh;
+        }
+
+}
+
 @media only screen and (max-width: 930px) {
 header          {grid-template: repeat(4, 1fr) / repeat(12, 1fr);
                 background-position: bottom right;    
